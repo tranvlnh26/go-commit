@@ -19,5 +19,5 @@
 
 `--commit-type`: Specify the type of commit to generate. This will be used as the type in the commit message e.g. `--commit-type feat`
 
-### License
+## License
 This project is licensed under the MIT License. You are free to use, copy, modify, and distribute this software, as long as you retain the copyright notice and the MIT license in all copies or substantial portions of the software.
