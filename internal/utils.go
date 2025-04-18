@@ -38,12 +38,12 @@ func getPromptCommit(diff string, commitType, language string) string {
 	)
 
 	if commitType != "" {
-		prompt += fmt.Sprintf(" with commit type '%s'. ", commitType)
+		prompt += fmt.Sprintf(" with commit type '%s' (lowercase). ", commitType)
 	} else {
 		prompt += ". "
 	}
 
-	prompt += " Do not preface the commit with anything, use the present tense, return the full sentence and also commit type:"
+	prompt += " Do not preface the commit with anything, use the present tense, return the full sentence and also commit type (lowercase):"
 
 	prompt += "\n\n" + diff
 

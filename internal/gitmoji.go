@@ -2,7 +2,6 @@ package internal
 
 import (
 	"regexp"
-	"strings"
 )
 
 func addGitmojiToCommitMessage(commitMessage string) string {
@@ -15,7 +14,6 @@ func addGitmojiToCommitMessage(commitMessage string) string {
 		"test":     "✅",
 		"chore":    "🔧",
 	}
-	commitMessage = strings.ToLower(commitMessage)
 
 	re := regexp.MustCompile(`^[a-zA-Z]+`)
 	match := re.FindString(commitMessage)
